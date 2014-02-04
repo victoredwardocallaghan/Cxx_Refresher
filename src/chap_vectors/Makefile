@@ -11,4 +11,4 @@ all:
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(SRC)
 
 check:
-	clang++ --analyze $(SRC)
+	$(CXX) $(CXXFLAGS) --analyze $(SRC)
