@@ -9,3 +9,6 @@ SRC=vectors.cpp
 
 all:
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(SRC)
+
+check:
+	clang++ --analyze $(SRC)
